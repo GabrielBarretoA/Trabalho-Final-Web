@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/css1.css">
+    <link rel="stylesheet" href="bootstrap-5.3.2-dist\css\bootstrap.css">
+    <title>TABELA IMC</title>
+</head>
+
+<body>
+    <main class="container">
+      <div class="row d-flex justify-content-center align-items-center " id="formup">
+        <div class="col-sm-12 form-group " >
+         <div id="formu">
+          <fieldset>
+            <legend>Calculadora IMC</legend>
+            <label class="form-label" for="idade"> Idade</label>
+            <input type="number" class="form-control" id="idade" placeholder="idade">
+
+            <label class="form-label" for="peso"> Peso</label>
+            <input type="number" class="form-control" id="peso" placeholder="Kg">
+
+            <label class="form-label" for="altura"> Altura</label>
+            <input type="number" class="form-control" id="altura" placeholder="Cm">
+          </fieldset>
+            <button class="btn btn-outline-primary mt-3 " id="botão" onclick="calcularImc()">calcular</button>
+         </div>
+        </div>
+        <div class="row d-flex justify-content-center">
+            <div class="col-md-6" >
+              <table class="table mt-4" id="tabelaDeValores" style="display:none">
+                <thead class="thead-light">
+                  <tr>
+                    <th scope="col">Plano</th>
+                    <th scope="col">Operadora A</th>
+                    <th scope="col">Operadora B</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <th>BASIC</span></th>
+                    <td><span id="planoABasic"></span></td>
+                    <td><span id="planoBBasic"></span></td>
+                  </tr>
+                  <tr>
+                     <th>Standard</th>
+                     <td><span id="planoAStandard"></td>
+                     <td><span id="planoBStandard"></td>
+                 </tr>
+                 <tr>
+                  <th>Premium</th>
+                  <td><span id="planoAPremium"></td>
+                  <td><span id="planoBPremium"></td>
+              </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        <script src="js/js1.js"> </script>
+
+    </main>
+</body>
+
+</html>

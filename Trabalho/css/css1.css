@@ -1,0 +1,46 @@
+@import url('https://fonts.googleapis.com/css2?family=Sora:wght@200;300;400&display=swap');
+
+* {
+    margin: 50;
+    padding: 0;
+    vertical-align: baseline;
+}
+body{
+ background-color: rgb(20, 20, 20) !important;
+}
+
+.container{
+    background-color: rgb(210, 223, 235);
+    margin-top: 10%;
+    border-radius: 30px;
+}
+
+#tabelaDeValores {
+    display: none;
+    border-radius: 30px !important;
+}
+
+input {
+	display: block;
+    margin: 0 auto;
+}
+
+#botão{
+    width:90;
+    height:10;
+    margin-left: 15%;
+}
+
+#Formup{
+    align-items: flex-start;
+}
+
+#formu{
+    margin-left: 30%;
+}
+
+.form-control{
+    width: 40% !important;
+}
+
+
