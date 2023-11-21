@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/css1.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <main id="container">
+        <section>
+            <h1 id="tituloP">Saiba qual o plano de saúde ideal para o seu bolso:</h1>
+        </section>
+
+        <section class="form-calculadora">
+
+            <h1 id="tituloC">Calculadora de IMC</h1>
+
+            <div class="caixa">
+                <label for="idade"> Idade</label>
+                <div class="campos">
+                    <input type="number" class="form-controle" id="idade" autocomplete="off" required>
+                    <span>idade</span>
+                </div>
+
+            </div>
+
+            <div class="caixa">
+                <label for="peso"> Peso</label>
+                <div class="campos">
+                    <input type="number" class="form-controle" id="peso" autocomplete="off" required>
+                    <span>Kg</span>
+                </div>
+            </div>
+
+            <div class="caixa">
+                <label for="altura"> Altura</label>
+                <div class="campos">
+                    <input type="number" class="form-controle" id="altura" placeholder="Ex:170" autocomplete="off" required>
+                    <span>Cm</span>
+                </div>
+            </div>
+
+            <button id="btn" onclick="calcularImc()">calcular</button>
+
+            <script src="js/js1.js"> </script>
+    </main>
+
+    <div class="tabela">
+        <table id="tabelaDeValores">
+            
+            <thead>
+                <tr>
+                    <th>Plano</th>
+                    <th>Hapvida</th>
+                    <th>Unimed</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th>Basic</th>
+                    <td id="planoABasic"></td>
+                    <td id="planoBBasic"></td>
+                </tr>
+                <tr>
+                    <th>Standard</th>
+                    <td id="planoAStandard"></td>
+                    <td id="planoBStandard"></td>
+                </tr>
+                <tr>
+                    <th>Premium</th>
+                    <td id="planoAPremium"></td>
+                    <td id="planoBPremium"></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</body>
+
+</html>
